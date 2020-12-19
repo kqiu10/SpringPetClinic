@@ -10,7 +10,7 @@ package guru.springframework.spring_pet_clinic.model;
  * Space complexity: O();
 
  */
-public class PetType {
+public class PetType extends BaseEntity{
     private String name;
 
     public String getName() {

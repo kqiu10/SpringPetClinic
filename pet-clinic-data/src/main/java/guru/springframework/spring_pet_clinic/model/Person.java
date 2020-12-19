@@ -10,7 +10,7 @@ package guru.springframework.spring_pet_clinic.model;
  * Space complexity: O();
 
  */
-public class Person {
+public class Person extends BaseEntity{
     private String firstName;
     private String lastName;
 
