@@ -5,7 +5,8 @@ package guru.springframework.spring_pet_clinic.services.map;
  */
 
 import guru.springframework.spring_pet_clinic.model.Owner;
-import guru.springframework.spring_pet_clinic.services.CrudService;
+import guru.springframework.spring_pet_clinic.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
@@ -15,7 +16,13 @@ import java.util.Set;
  * Space complexity: O();
 
  */
-public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long> {
+@Service
+public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
+    @Override
+    public Owner findByLastName(String lastName) {
+        return null;
+    }
+
     @Override
     public Set<Owner> findAll() {
         return super.findAll();
